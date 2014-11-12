@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="Scripts/jquery-2.1.1.intellisense.js"></script>
+    <script src="Scripts/jquery-2.1.1.min.js"></script>
+    <title></title>
+</head>
+<body>
+    <h1>Entered a name that will be saved in local storage...</h1>
+    <input type="text" id="nameField" />
+    <input id="nameButton" onclick="saveNameToLocalStorage()" value="Submit" type="button" />
+    <br />
+    <h2>Your last entered name was: </h2> <p id="lastEnteredName"></p>
+</body>
+</html>
+<script>
+    function saveNameToLocalStorage() {
+        localStorage.lastEnteredName = document.getElementById("nameField").value;
+        document.getElementById("lastEnteredName").innerHTML = localStorage.lastEnteredName;
+    }
+
+    $(document).ready(function LoadLocalStorage() {
+        document.getElementById("lastEnteredName").innerHTML = localStorage.lastEnteredName;
+    })
+</script>
