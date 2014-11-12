@@ -4,6 +4,63 @@
     <title></title>
 </head>
 <body>
+    <div id="div1">
 
+    </div>
 </body>
 </html>
+
+<style>
+    div {
+        width: 100px;
+        height: 100px;
+        background: black;
+        position: relative;
+        width: 250px;
+        height: 200px;
+        animation: myfirst 3s;
+        -webkit-animation: myfirst 6s, infinite; /* Chrome, Safari, Opera */
+        /*transition: width 1s, height 0.5s, transform 2s;*/
+    }
+
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes myfirst {
+        0% {
+            background: black;
+            left: 0px;
+            top: 0px;
+            -webkit-transform: rotate3d(0, 0, 0);
+        }
+
+        25% {
+            background: blue;
+            left: 200px;
+            top: 0px;
+            -webkit-transform: rotate3d(1, -1, 0, 90deg);
+        }
+
+        50% {
+            background: green;
+            left: 200px;
+            top: 200px;
+            -webkit-transform: rotate3d(-1, -1, 0, 180deg);
+        }
+
+        75% {
+            background: red;
+            left: 0px;
+            top: 200px;
+            -webkit-transform: rotate3d(1, -1, 0, 270deg);
+        }
+
+        100% {
+            background: black;
+            left 0px;
+            top: 0px;
+            -webkit-transform: rotate3d(1, -1, 0, 360deg);
+        }
+    }
+
+    div:hover {
+    }
+</style>
