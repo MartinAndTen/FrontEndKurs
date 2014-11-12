@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SVG", "..\SVG\SVG\SVG.csproj", "{793CD618-ACC5-483E-AEDC-E8D1E5CAC9ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalStorageWithQUnit", "..\Qunit\Repo\LocalStorageWithQUnit\LocalStorageWithQUnit\LocalStorageWithQUnit.csproj", "{042D2B29-1F24-4724-8EF3-1BB4AC23B992}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{793CD618-ACC5-483E-AEDC-E8D1E5CAC9ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{793CD618-ACC5-483E-AEDC-E8D1E5CAC9ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{793CD618-ACC5-483E-AEDC-E8D1E5CAC9ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{793CD618-ACC5-483E-AEDC-E8D1E5CAC9ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{042D2B29-1F24-4724-8EF3-1BB4AC23B992}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{042D2B29-1F24-4724-8EF3-1BB4AC23B992}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{042D2B29-1F24-4724-8EF3-1BB4AC23B992}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{042D2B29-1F24-4724-8EF3-1BB4AC23B992}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
