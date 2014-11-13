@@ -2,15 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <script src="Scripts/jquery-2.1.1.intellisense.js"></script>
-    <script src="Scripts/jquery-2.1.1.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="Styles/jquery.mobile-1.4.4.min.css" rel="stylesheet" />
-    <!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">-->
-    <script src="Scripts/jquery-1.11.1.min.js"></script>
-    <!--<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>-->
-    <script src="Scripts/jquery.mobile-1.4.4.min.js"></script>
-    <!--<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>-->
+
+
     <title></title>
 </head>
 
@@ -39,9 +34,7 @@
         <div data-role="footer">
             <h2>The last stored entered name is:</h2><h1 class=" ui-corner-all" id="lastEnteredName"></h1>
         </div>
-
         <a data-transition="flip" data-direction="reverse" class="ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-right" href="#pageTwo">Click here to pop-up page two</a>
-
     </div>
 
     <div data-role="page" data-dialog="true" data-theme="b" id="pageTwo">
@@ -59,24 +52,18 @@
             <div data-role="main" class="ui-content">
                 You can find me on the following social media
             </div>
-                <div data-role="footer">
-                    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">Add Me On Facebook</a>
-                    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">Add Me On Twitter</a>
-                    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">Add Me On Instagram</a>
-                </div>
-            
+            <div data-role="footer">
+                <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">Add Me On Facebook</a>
+                <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">Add Me On Twitter</a>
+                <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">Add Me On Instagram</a>
+            </div>
         </div>
     </div>
+
+    <script src="Scripts/jquery-2.1.1.intellisense.js"></script>
+    <script src="Scripts/jquery-2.1.1.min.js"></script>
+    <script src="Scripts/jquery-1.11.1.min.js"></script>
+    <script src="Scripts/jquery.mobile-1.4.4.min.js"></script>
+    <script src="Scripts/LocalStorage.js"></script>
 </body>
 </html>
-<script>
-    function saveNameToLocalStorage() {
-        localStorage.lastEnteredName = document.getElementById("nameField").value;
-        document.getElementById("lastEnteredName").innerHTML = localStorage.lastEnteredName;
-        document.getElementById("lastEnteredNamePopup").innerHTML = localStorage.lastEnteredName + " has been saved to local storage";
-    }
-
-    $(document).ready(function LoadLocalStorage() {
-        document.getElementById("lastEnteredName").innerHTML = localStorage.lastEnteredName;
-    })
-</script>
