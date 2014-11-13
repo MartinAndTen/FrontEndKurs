@@ -18,7 +18,7 @@
         </div>
 
         <div data-role="main" class="ui-content">
-            <h4 class="ui-mini ">Enter a name to be stored in local storage...</h4>
+            <h4 class="ui-mini">Enter a name to be stored in local storage...</h4>
             <input data-clear-btn="true" type="text" id="nameField" data-mini="true" />
             <!--<input id="nameButton" onclick="saveNameToLocalStorage()" value="Submit" type="button" />-->
             <a href="#storedNamePopup" data-rel="popup" data-transition="flow" onclick="saveNameToLocalStorage()" class="ui-btn">Submit</a>
@@ -31,10 +31,11 @@
             </div>
         </div>
 
-        <div data-role="footer">
-            <h2>The last stored entered name is:</h2><h1 class=" ui-corner-all" id="lastEnteredName"></h1>
+        <div data-role="footer" class="ui-corner-all">
+            <h2>The latest stored name is:</h2><h1 id="lastEnteredName"></h1>
         </div>
-        <a data-transition="flip" data-direction="reverse" class="ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-right" href="#pageTwo">Click here to pop-up page two</a>
+        <a id="firstA" data-transition="flip" data-direction="reverse" class="ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-right" href="#pageTwo">Click here to pop-up page two or Swipe right!</a>
+        
     </div>
 
     <div data-role="page" data-dialog="true" data-theme="b" id="pageTwo">
@@ -44,7 +45,7 @@
 
         <div data-role="main" class="ui-content">
             <img style="margin-left:25%;" src="Content/ThumbsUp.jpg" />
-            <a href="#myPopupDialog" data-rel="popup" data-transition="flow" class="ui-btn">Social media links</a>
+            <a id="secondA" href="#myPopupDialog" data-rel="popup" data-transition="flow" data-direction="reverse" class="ui-btn">click for my social media links or...<br /><br />Swipe left to go back!</a>
         </div>
 
         <div data-role="popup" id="myPopupDialog">
