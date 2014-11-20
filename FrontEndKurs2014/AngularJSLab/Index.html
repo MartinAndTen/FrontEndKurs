@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <div data-ng-app="" data-ng-init="person={firstName:'Lolzor',lastName:'abaaerg'};quantity=2;cost=3;" data-ng-controller="personController">
+        <p>Name: <input type="text" data-ng-model="person.firstName" /> </p>
+        <p data-ng-bind="person.lastName"></p>
+
+        <p>My first expression: {{ 5 + 5 }}</p>
+
+        <br />
+        Full Name: {{firstName2 + " " + lastName}}
+        <p>Total in dollar: {{ quantity * cost }}</p>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+
+    <script src="Scripts/personController.js"></script>
+</body>
+</html>
