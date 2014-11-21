@@ -1,22 +1,18 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="MyApp">
 <head>
     <title></title>
+    <meta charset="utf-8" />
 </head>
 <body>
-    <div data-ng-app="" data-ng-init="person={firstName:'Lolzor',lastName:'abaaerg'};quantity=2;cost=3;" data-ng-controller="personController">
-        <p>Name: <input type="text" data-ng-model="person.firstName" /> </p>
-        <p data-ng-bind="person.lastName"></p>
+    <div data-ng-view="">
 
-        <p>My first expression: {{ 5 + 5 }}</p>
-
-        <br />
-        Full Name: {{firstName2 + " " + lastName}}
-        <p>Total in dollar: {{ quantity * cost }}</p>
     </div>
-
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
-
-    <script src="Scripts/personController.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="App/Controllers/firstController.js"></script>
+    <script src="App/Controllers/secondController.js"></script>
+    <script src="App/app.js"></script>
 </body>
 </html>
