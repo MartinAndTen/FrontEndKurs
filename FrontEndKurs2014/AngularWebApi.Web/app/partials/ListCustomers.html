@@ -1,0 +1,16 @@
+﻿<table border="1">
+    <tr>
+        <th>ID</th><th>ContactName</th><th>CompanyName</th>
+    </tr>
+    
+    <tr data-ng-repeat="c in Customers">
+        <td data-ng-bind="c.CustomerID"></td>
+        <td data-ng-bind="c.ContactName"></td>
+        <td data-ng-bind="c.CompanyName"></td>
+        <td><button data-ng-click="DeleteCustomer(c.CustomerID)">Delete this bitch</button></td>
+    </tr>
+</table>
+
+<div>
+    <span>hejhejhej</span>
+</div>

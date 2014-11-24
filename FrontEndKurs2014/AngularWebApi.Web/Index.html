@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" data-ng-app="MyApp">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            /*background-color:black;*/
+            width: 15%;
+        }
+        a {
+            text-decoration: none;
+            text-anchor: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-color:green">
+        <a href="/">New Customer</a>
+        <a href="#/List">List Customers</a>
+    </div>
+
+    <div data-ng-view></div>
+
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+    <script src="app/controllers/DeleteCustomerController.js"></script>
+    <script src="app/controllers/ListCustomersController.js"></script>
+    <script src="app/controllers/NewCustomerController.js"></script>
+
+    <script src="app/app.js"></script>  
+</body>
+</html>
