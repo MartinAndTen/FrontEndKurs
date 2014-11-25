@@ -6,7 +6,8 @@ app.config(function ($routeProvider) {
         templateUrl: "/app/partials/NewCustomer.html",
         controller: "NewCustomerController"
     })
-    .when('/List', {
+    .when('/List',
+    {
         templateUrl: "/app/partials/ListCustomers.html",
         controller: "ListCustomersController"
     });
