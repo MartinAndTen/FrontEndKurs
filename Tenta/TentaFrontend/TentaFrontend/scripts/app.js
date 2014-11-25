@@ -13,4 +13,6 @@ app.config(function ($routeProvider) {
         });
 });
 
-app.controller('NewGenreController', NewGenreController).controller('ListGenresController', ListGenresController);
+app.controller('NewGenreController', NewGenreController)
+    .controller('ListGenresController', ListGenresController)
+    .controller('DeleteGenreController', DeleteGenreController);
