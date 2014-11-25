@@ -1,0 +1,13 @@
+﻿<table border="1">
+    <tr>
+        <th>GenreId</th><th>Name</th>
+    </tr>
+
+    <tr data-ng-repeat="g in Genres">
+        <td data-ng-bind="g.GenreId"></td>
+        <td data-ng-bind="g.Name"></td>
+        <td><button>Delete</button></td>
+    </tr>
+</table>
+
+<span>ListGenresView</span>

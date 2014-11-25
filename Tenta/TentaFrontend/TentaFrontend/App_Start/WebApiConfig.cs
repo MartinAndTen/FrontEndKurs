@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.OData.Builder;
+using System.Web.Http.OData.Extensions;
+using TentaFrontend.Models;
 
 namespace TentaFrontend
 {
@@ -19,6 +22,10 @@ namespace TentaFrontend
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            ODataConventionModelBuilder builder = new ODataConventionModelBuilder();
+            builder.EntitySet<Genre>("Genres");
+            config.Routes.MapODataServiceRoute("odata", "odata", builder.GetEdmModel());
+
         }
     }
 }
