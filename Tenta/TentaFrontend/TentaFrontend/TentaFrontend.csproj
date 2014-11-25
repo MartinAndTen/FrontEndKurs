@@ -102,8 +102,10 @@
     <Content Include="scripts\app.js" />
     <Content Include="scripts\controllers\ListGenresController.js" />
     <Content Include="scripts\controllers\NewGenreController.js" />
+    <Content Include="scripts\controllers\UpdateGenreController.js" />
     <Content Include="views\partials\NewGenre.html" />
     <Content Include="views\partials\ListGenres.html" />
+    <Content Include="views\partials\UpdateGenre.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
